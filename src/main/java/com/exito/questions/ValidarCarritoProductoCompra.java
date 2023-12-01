@@ -4,7 +4,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-import static com.exito.ui.CarritoPage.TXT_TITULO_PRODUCTO;
+import static com.exito.ui.Compra.CarritoPage.TXT_TITULO_PRODUCTO;
 
 public class ValidarCarritoProductoCompra implements Question<Boolean> {
     @Override
