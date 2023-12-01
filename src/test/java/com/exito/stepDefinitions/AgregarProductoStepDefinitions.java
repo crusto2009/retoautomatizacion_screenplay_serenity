@@ -47,6 +47,7 @@ public class AgregarProductoStepDefinitions {
                 PaginaInicialTask.on()
         );
     }
+
     @Cuando("el usuario seleccione un producto y lo agregue al carrito")
     public void elUsuarioSeleccioneUnProductoYLoAgregueAlCarrito() {
         //TODO buscar que es wasAbleTo.

@@ -5,21 +5,19 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 
-import java.io.IOException;
-
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class HomeTask implements Task {
+public class IngresarCredencialesTask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                InteractionHome.hacerClickBotonMiCuenta(),
-                InteractionHome.hacerClickBotonIngresarEmailContrasena()
+                InteractionHome.ingresarEmail(),
+                InteractionHome.ingresarContrasena()
         );
     }
 
     //TODO preguntar
     public static Performable on(){
-        return instrumented(HomeTask.class);
+        return instrumented(IngresarCredencialesTask.class);
     }
 }

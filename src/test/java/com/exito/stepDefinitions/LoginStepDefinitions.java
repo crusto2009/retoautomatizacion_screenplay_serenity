@@ -2,7 +2,9 @@ package com.exito.stepDefinitions;
 
 import com.exito.questions.ValidarHome;
 import com.exito.tasks.Compra.PaginaInicialTask;
+import com.exito.tasks.Home.ClicBtnIngresarTask;
 import com.exito.tasks.Home.HomeTask;
+import com.exito.tasks.Home.IngresarCredencialesTask;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.*;
 import net.serenitybdd.screenplay.actions.Open;
@@ -32,13 +34,16 @@ public class LoginStepDefinitions {
     }
     @Cuando("el usuario ingresa email y contrasena")
     public void elUsuarioIngresaEmailYContrasena() {
-        theActorInTheSpotlight().attemptsTo(
-                HomeTask.on()
+        theActorInTheSpotlight().wasAbleTo(
+                HomeTask.on(),
+                IngresarCredencialesTask.on()
         );
     }
     @Cuando("de clic en el boton entrar")
     public void deClicEnElBotonEntrar() {
-
+        theActorInTheSpotlight().wasAbleTo(
+                ClicBtnIngresarTask.on()
+        );
     }
     @Entonces("el usuario visualiza la pagina de inicio")
     public void elUsuarioVisualizaLaPaginaDeInicio() {
