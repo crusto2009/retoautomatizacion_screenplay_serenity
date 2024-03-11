@@ -14,6 +14,7 @@ public class InteractionDetallesProducto {
     }
 
     public static ClickInteraction hacerClickBotonCarrito() {
+
         return  Click.on(BTN_CARRITO);
     }
 

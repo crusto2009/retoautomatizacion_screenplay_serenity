@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class HomePage {
 
-    public static final Target BTN_MICUENTA = Target.the("Boton mi cuenta").locatedBy("//div[contains(@class,'styledLinkContent--header-link')]");
+    public static final Target BTN_MICUENTA = Target.the("Boton mi cuenta").locatedBy("//*[@id='__next']/header/section/div/div[2]/div[2]/a");
 
     public static final Target BTN_LOGINEMAILCONTRASENA= Target.the("Boton inicio email y contraseña").locatedBy("//div[contains(@class,'vtex-login-2-x-emailPasswordOptionBtn')]");
 
